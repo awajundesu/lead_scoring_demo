@@ -2,7 +2,7 @@ WITH rand AS(
   SELECT
     *,
     case
-      when rand() > 0.92 then 'UNK'
+      when rand() > 0.9 then 'UNK'
       else job_title
     end as job_title2
   FROM lead_scoring
